@@ -4,69 +4,62 @@ Creates and configures the Flask application
 """
 
 import os
+from flask_cors import CORS
 import logging
 from logging.handlers import RotatingFileHandler
 from flask import Flask, jsonify
 from flask_cors import CORS
 
 from app.config import Config
-from app.extensions import init_db
+from app.extensions import close_db, init_db
 from app.routes.auth_routes import auth_bp
 from app.routes.task_routes import task_bp
 
 
 def create_app(config_class=Config):
-    """
-    Application factory function
-    Creates and configures the Flask app
-    """
     app = Flask(__name__)
-    
-    # Load configuration
+
+    # Load configuration FIRST
     app.config.from_object(config_class)
-    
-    # Enable CORS for frontend
-    CORS(app, resources={
-        r"/api/*": {
-            "origins": ["http://localhost:5000", "http://127.0.0.1:5000"],
-            "methods": ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-            "allow_headers": ["Content-Type", "Authorization"]
-        }
-    })
-    
+
+    CORS(app)
+
     # Setup logging
     setup_logging(app)
-    
-    # Initialize database connection
+
+    # Initialize database connection pool
     init_db(app)
-    
-    # Register blueprints with API versioning
+
+    # Register blueprints
     app.register_blueprint(auth_bp, url_prefix='/api/v1/auth')
     app.register_blueprint(task_bp, url_prefix='/api/v1/tasks')
-    
+
     # Register error handlers
     register_error_handlers(app)
-    
-    # Health check endpoint
+
+    # Health check
     @app.route('/api/v1/health', methods=['GET'])
     def health_check():
         return jsonify({
             'status': 'healthy',
             'message': 'API is running'
         }), 200
-    
+
     # Root endpoint
     @app.route('/', methods=['GET'])
     def root():
         return jsonify({
             'message': 'Task Management API',
-            'version': '1.0',
-            'documentation': '/api/v1/docs'
+            'version': '1.0'
         }), 200
-    
+
+    # IMPORTANT: return DB connection to pool after request
+    app.teardown_appcontext(close_db)
+
     app.logger.info('Application started successfully')
-    
+
     return app
+
 
 
 def setup_logging(app):

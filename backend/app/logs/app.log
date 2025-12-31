@@ -31,3 +31,509 @@
             FROM users
         ...
 2025-12-31 17:14:17,733 - INFO - app - User logged in: test1@example.com
+2025-12-31 17:24:32,674 - INFO - app - MySQL connection pool created
+2025-12-31 17:24:32,682 - INFO - app - Application started successfully
+2025-12-31 17:24:34,561 - INFO - app - MySQL connection pool created
+2025-12-31 17:24:34,569 - INFO - app - Application started successfully
+2025-12-31 17:29:35,901 - INFO - app - MySQL connection pool created
+2025-12-31 17:29:35,914 - INFO - app - Application started successfully
+2025-12-31 17:31:15,613 - INFO - app - MySQL connection pool created
+2025-12-31 17:31:15,622 - INFO - app - Application started successfully
+2025-12-31 17:31:54,947 - INFO - app - MySQL connection pool created
+2025-12-31 17:31:54,957 - INFO - app - Application started successfully
+2025-12-31 17:32:04,815 - INFO - app - MySQL connection pool created
+2025-12-31 17:32:04,826 - INFO - app - Application started successfully
+2025-12-31 17:32:09,057 - INFO - app - MySQL connection pool created
+2025-12-31 17:32:09,069 - INFO - app - Application started successfully
+2025-12-31 17:32:11,603 - INFO - app - MySQL connection pool created
+2025-12-31 17:32:11,612 - INFO - app - Application started successfully
+2025-12-31 17:32:13,350 - DEBUG - app - Database connection acquired
+2025-12-31 17:32:13,351 - DEBUG - app - Executing query: 
+            SELECT id, email, password_hash, name, role, created_at
+            FROM users
+        ...
+2025-12-31 17:32:13,670 - DEBUG - app - Executing query: 
+            INSERT INTO users (email, password_hash, name, role)
+            VALUES (%s, %s, %s, %s...
+2025-12-31 17:32:13,674 - INFO - app - New user registered: manjuguru814@gmail.com (ID: 4)
+2025-12-31 17:32:18,897 - DEBUG - app - Database connection acquired
+2025-12-31 17:32:18,898 - DEBUG - app - Executing query: 
+            SELECT id, email, password_hash, name, role, created_at
+            FROM users
+        ...
+2025-12-31 17:32:19,208 - INFO - app - User logged in: manjuguru814@gmail.com
+2025-12-31 17:32:20,111 - DEBUG - app - Database connection acquired
+2025-12-31 17:32:20,112 - DEBUG - app - Executing query: 
+                SELECT id, title, description, status, user_id, created_at
+                FROM tas...
+2025-12-31 17:32:20,116 - DEBUG - app - Executing query: 
+                SELECT COUNT(*) as count
+                FROM tasks
+                WHERE user_id =...
+2025-12-31 17:32:41,044 - DEBUG - app - Database connection acquired
+2025-12-31 17:32:41,045 - DEBUG - app - Executing query: 
+            INSERT INTO tasks (title, description, status, user_id)
+            VALUES (%s, %s, %s,...
+2025-12-31 17:32:41,049 - INFO - app - Task created: 1 by user 4
+2025-12-31 17:32:41,362 - DEBUG - app - Database connection acquired
+2025-12-31 17:32:41,363 - DEBUG - app - Executing query: 
+                SELECT id, title, description, status, user_id, created_at
+                FROM tas...
+2025-12-31 17:32:41,365 - DEBUG - app - Executing query: 
+                SELECT COUNT(*) as count
+                FROM tasks
+                WHERE user_id =...
+2025-12-31 17:32:46,042 - DEBUG - app - Database connection acquired
+2025-12-31 17:32:46,043 - DEBUG - app - Executing query: 
+                SELECT id, title, description, status, user_id, created_at
+                FROM tas...
+2025-12-31 17:32:46,045 - DEBUG - app - Executing query: 
+                SELECT COUNT(*) as count
+                FROM tasks
+                WHERE user_id =...
+2025-12-31 17:32:48,523 - DEBUG - app - Database connection acquired
+2025-12-31 17:32:48,523 - DEBUG - app - Executing query: 
+                SELECT id, title, description, status, user_id, created_at
+                FROM tas...
+2025-12-31 17:32:48,525 - DEBUG - app - Executing query: 
+                SELECT COUNT(*) as count
+                FROM tasks
+                WHERE user_id =...
+2025-12-31 17:32:50,997 - DEBUG - app - Database connection acquired
+2025-12-31 17:32:50,998 - DEBUG - app - Executing query: 
+                SELECT id, title, description, status, user_id, created_at
+                FROM tas...
+2025-12-31 17:32:51,000 - DEBUG - app - Executing query: 
+                SELECT COUNT(*) as count
+                FROM tasks
+                WHERE user_id =...
+2025-12-31 17:32:52,195 - DEBUG - app - Database connection acquired
+2025-12-31 17:32:52,196 - DEBUG - app - Executing query: 
+                SELECT id, title, description, status, user_id, created_at
+                FROM tas...
+2025-12-31 17:32:52,198 - DEBUG - app - Executing query: 
+                SELECT COUNT(*) as count
+                FROM tasks
+                WHERE user_id =...
+2025-12-31 17:32:52,756 - DEBUG - app - Database connection acquired
+2025-12-31 17:32:52,759 - DEBUG - app - Executing query: 
+                SELECT id, title, description, status, user_id, created_at
+                FROM tas...
+2025-12-31 17:32:52,761 - DEBUG - app - Executing query: 
+                SELECT COUNT(*) as count
+                FROM tasks
+                WHERE user_id =...
+2025-12-31 17:32:53,759 - ERROR - app - Failed to get database connection: Failed getting connection; pool exhausted
+2025-12-31 17:32:53,759 - ERROR - app - Get tasks error: Failed getting connection; pool exhausted
+2025-12-31 17:32:54,007 - ERROR - app - Failed to get database connection: Failed getting connection; pool exhausted
+2025-12-31 17:32:54,009 - ERROR - app - Get tasks error: Failed getting connection; pool exhausted
+2025-12-31 17:32:56,796 - ERROR - app - Failed to get database connection: Failed getting connection; pool exhausted
+2025-12-31 17:32:56,797 - ERROR - app - Get tasks error: Failed getting connection; pool exhausted
+2025-12-31 17:33:01,304 - ERROR - app - Failed to get database connection: Failed getting connection; pool exhausted
+2025-12-31 17:33:01,305 - ERROR - app - Get tasks error: Failed getting connection; pool exhausted
+2025-12-31 17:33:03,756 - ERROR - app - Failed to get database connection: Failed getting connection; pool exhausted
+2025-12-31 17:33:03,758 - ERROR - app - Get tasks error: Failed getting connection; pool exhausted
+2025-12-31 17:33:08,470 - ERROR - app - Failed to get database connection: Failed getting connection; pool exhausted
+2025-12-31 17:33:08,472 - ERROR - app - Get tasks error: Failed getting connection; pool exhausted
+2025-12-31 17:33:13,615 - ERROR - app - Failed to get database connection: Failed getting connection; pool exhausted
+2025-12-31 17:33:13,616 - ERROR - app - Get tasks error: Failed getting connection; pool exhausted
+2025-12-31 17:33:19,938 - ERROR - app - Failed to get database connection: Failed getting connection; pool exhausted
+2025-12-31 17:33:19,938 - ERROR - app - Create task error: Failed getting connection; pool exhausted
+2025-12-31 17:33:24,579 - ERROR - app - Failed to get database connection: Failed getting connection; pool exhausted
+2025-12-31 17:33:24,580 - ERROR - app - Get tasks error: Failed getting connection; pool exhausted
+2025-12-31 17:33:25,756 - ERROR - app - Failed to get database connection: Failed getting connection; pool exhausted
+2025-12-31 17:33:25,758 - ERROR - app - Get tasks error: Failed getting connection; pool exhausted
+2025-12-31 17:34:22,739 - ERROR - app - Failed to get database connection: Failed getting connection; pool exhausted
+2025-12-31 17:34:22,739 - ERROR - app - Create task error: Failed getting connection; pool exhausted
+2025-12-31 17:34:43,632 - ERROR - app - Failed to get database connection: Failed getting connection; pool exhausted
+2025-12-31 17:34:43,633 - ERROR - app - Create task error: Failed getting connection; pool exhausted
+2025-12-31 17:36:18,128 - INFO - app - MySQL connection pool created
+2025-12-31 17:36:18,140 - INFO - app - Application started successfully
+2025-12-31 17:36:22,195 - DEBUG - app - Database connection acquired
+2025-12-31 17:36:22,196 - DEBUG - app - Executing query: 
+                SELECT id, title, description, status, user_id, created_at
+                FROM tas...
+2025-12-31 17:36:22,198 - DEBUG - app - Executing query: 
+                SELECT COUNT(*) as count
+                FROM tasks
+                WHERE user_id =...
+2025-12-31 17:36:22,890 - DEBUG - app - Database connection acquired
+2025-12-31 17:36:22,898 - DEBUG - app - Executing query: 
+                SELECT id, title, description, status, user_id, created_at
+                FROM tas...
+2025-12-31 17:36:22,915 - DEBUG - app - Executing query: 
+                SELECT COUNT(*) as count
+                FROM tasks
+                WHERE user_id =...
+2025-12-31 17:36:25,332 - DEBUG - app - Database connection acquired
+2025-12-31 17:36:25,333 - DEBUG - app - Executing query: 
+                SELECT id, title, description, status, user_id, created_at
+                FROM tas...
+2025-12-31 17:36:25,335 - DEBUG - app - Executing query: 
+                SELECT COUNT(*) as count
+                FROM tasks
+                WHERE user_id =...
+2025-12-31 17:36:25,857 - DEBUG - app - Database connection acquired
+2025-12-31 17:36:25,869 - DEBUG - app - Executing query: 
+                SELECT id, title, description, status, user_id, created_at
+                FROM tas...
+2025-12-31 17:36:25,872 - DEBUG - app - Executing query: 
+                SELECT COUNT(*) as count
+                FROM tasks
+                WHERE user_id =...
+2025-12-31 17:36:29,147 - DEBUG - app - Database connection acquired
+2025-12-31 17:36:29,148 - DEBUG - app - Executing query: 
+                SELECT id, title, description, status, user_id, created_at
+                FROM tas...
+2025-12-31 17:36:29,150 - DEBUG - app - Executing query: 
+                SELECT COUNT(*) as count
+                FROM tasks
+                WHERE user_id =...
+2025-12-31 17:36:29,980 - DEBUG - app - Database connection acquired
+2025-12-31 17:36:29,981 - DEBUG - app - Executing query: 
+                SELECT id, title, description, status, user_id, created_at
+                FROM tas...
+2025-12-31 17:36:29,983 - DEBUG - app - Executing query: 
+                SELECT COUNT(*) as count
+                FROM tasks
+                WHERE user_id =...
+2025-12-31 17:36:31,913 - DEBUG - app - Database connection acquired
+2025-12-31 17:36:31,914 - DEBUG - app - Executing query: 
+                SELECT id, title, description, status, user_id, created_at
+                FROM tas...
+2025-12-31 17:36:31,915 - DEBUG - app - Executing query: 
+                SELECT COUNT(*) as count
+                FROM tasks
+                WHERE user_id =...
+2025-12-31 17:36:50,388 - DEBUG - app - Database connection acquired
+2025-12-31 17:36:50,388 - DEBUG - app - Executing query: 
+            INSERT INTO tasks (title, description, status, user_id)
+            VALUES (%s, %s, %s,...
+2025-12-31 17:36:50,391 - INFO - app - Task created: 2 by user 4
+2025-12-31 17:36:50,702 - DEBUG - app - Database connection acquired
+2025-12-31 17:36:50,703 - DEBUG - app - Executing query: 
+                SELECT id, title, description, status, user_id, created_at
+                FROM tas...
+2025-12-31 17:36:50,706 - DEBUG - app - Executing query: 
+                SELECT COUNT(*) as count
+                FROM tasks
+                WHERE user_id =...
+2025-12-31 17:37:02,834 - DEBUG - app - Database connection acquired
+2025-12-31 17:37:02,837 - DEBUG - app - Executing query: 
+                SELECT id, title, description, status, user_id, created_at
+                FROM tas...
+2025-12-31 17:37:02,844 - DEBUG - app - Executing query: 
+                SELECT COUNT(*) as count
+                FROM tasks
+                WHERE user_id =...
+2025-12-31 17:37:05,583 - ERROR - app - Failed to get database connection: Failed getting connection; pool exhausted
+2025-12-31 17:37:05,584 - ERROR - app - Get tasks error: Failed getting connection; pool exhausted
+2025-12-31 17:37:08,428 - ERROR - app - Failed to get database connection: Failed getting connection; pool exhausted
+2025-12-31 17:37:08,429 - ERROR - app - Get tasks error: Failed getting connection; pool exhausted
+2025-12-31 17:37:10,444 - ERROR - app - Failed to get database connection: Failed getting connection; pool exhausted
+2025-12-31 17:37:10,445 - ERROR - app - Get tasks error: Failed getting connection; pool exhausted
+2025-12-31 17:37:12,180 - ERROR - app - Failed to get database connection: Failed getting connection; pool exhausted
+2025-12-31 17:37:12,181 - ERROR - app - Get tasks error: Failed getting connection; pool exhausted
+2025-12-31 17:37:14,031 - ERROR - app - Failed to get database connection: Failed getting connection; pool exhausted
+2025-12-31 17:37:14,032 - ERROR - app - Get tasks error: Failed getting connection; pool exhausted
+2025-12-31 17:37:16,194 - ERROR - app - Failed to get database connection: Failed getting connection; pool exhausted
+2025-12-31 17:37:16,195 - ERROR - app - Get tasks error: Failed getting connection; pool exhausted
+2025-12-31 17:37:17,061 - ERROR - app - Failed to get database connection: Failed getting connection; pool exhausted
+2025-12-31 17:37:17,063 - ERROR - app - Get tasks error: Failed getting connection; pool exhausted
+2025-12-31 17:37:18,253 - ERROR - app - Failed to get database connection: Failed getting connection; pool exhausted
+2025-12-31 17:37:18,254 - ERROR - app - Get tasks error: Failed getting connection; pool exhausted
+2025-12-31 17:39:15,234 - INFO - app - MySQL connection pool created
+2025-12-31 17:39:15,243 - INFO - app - Application started successfully
+2025-12-31 17:39:16,415 - INFO - app - MySQL connection pool created
+2025-12-31 17:39:16,425 - INFO - app - Application started successfully
+2025-12-31 17:39:18,364 - DEBUG - app - Database connection acquired
+2025-12-31 17:39:18,366 - DEBUG - app - Executing query: 
+                SELECT id, title, description, status, user_id, created_at
+                FROM tas...
+2025-12-31 17:39:18,368 - ERROR - app - Database query error: 'NoneType' object has no attribute 'cursor'
+2025-12-31 17:39:18,369 - ERROR - app - Get tasks error: 'NoneType' object has no attribute 'cursor'
+2025-12-31 17:39:20,226 - DEBUG - app - Database connection acquired
+2025-12-31 17:39:20,228 - DEBUG - app - Executing query: 
+                SELECT id, title, description, status, user_id, created_at
+                FROM tas...
+2025-12-31 17:39:20,237 - ERROR - app - Database query error: 'NoneType' object has no attribute 'cursor'
+2025-12-31 17:39:20,239 - ERROR - app - Get tasks error: 'NoneType' object has no attribute 'cursor'
+2025-12-31 17:39:22,022 - DEBUG - app - Database connection acquired
+2025-12-31 17:39:22,023 - DEBUG - app - Executing query: 
+                SELECT id, title, description, status, user_id, created_at
+                FROM tas...
+2025-12-31 17:39:22,025 - ERROR - app - Database query error: 'NoneType' object has no attribute 'cursor'
+2025-12-31 17:39:22,026 - ERROR - app - Get tasks error: 'NoneType' object has no attribute 'cursor'
+2025-12-31 17:39:22,882 - DEBUG - app - Database connection acquired
+2025-12-31 17:39:22,884 - DEBUG - app - Executing query: 
+                SELECT id, title, description, status, user_id, created_at
+                FROM tas...
+2025-12-31 17:39:22,888 - ERROR - app - Database query error: 'NoneType' object has no attribute 'cursor'
+2025-12-31 17:39:22,891 - ERROR - app - Get tasks error: 'NoneType' object has no attribute 'cursor'
+2025-12-31 17:39:24,649 - DEBUG - app - Database connection acquired
+2025-12-31 17:39:24,650 - DEBUG - app - Executing query: 
+                SELECT id, title, description, status, user_id, created_at
+                FROM tas...
+2025-12-31 17:39:24,652 - ERROR - app - Database query error: 'NoneType' object has no attribute 'cursor'
+2025-12-31 17:39:24,653 - ERROR - app - Get tasks error: 'NoneType' object has no attribute 'cursor'
+2025-12-31 17:40:31,224 - INFO - app - MySQL connection pool created
+2025-12-31 17:40:31,233 - INFO - app - Application started successfully
+2025-12-31 17:42:22,346 - INFO - app - MySQL connection pool created
+2025-12-31 17:42:22,356 - INFO - app - Application started successfully
+2025-12-31 17:42:23,431 - INFO - app - MySQL connection pool created
+2025-12-31 17:42:23,442 - INFO - app - Application started successfully
+2025-12-31 17:44:43,306 - INFO - app - MySQL connection pool created
+2025-12-31 17:44:43,315 - INFO - app - Application started successfully
+2025-12-31 17:44:44,439 - INFO - app - MySQL connection pool created
+2025-12-31 17:44:44,453 - INFO - app - Application started successfully
+2025-12-31 17:44:46,639 - DEBUG - app - Database connection acquired
+2025-12-31 17:44:46,641 - DEBUG - app - Executing query: 
+                SELECT id, title, description, status, user_id, created_at
+                FROM tas...
+2025-12-31 17:44:46,644 - DEBUG - app - Executing query: 
+                SELECT COUNT(*) as count
+                FROM tasks
+                WHERE user_id =...
+2025-12-31 17:44:46,650 - DEBUG - app - Database connection returned to pool
+2025-12-31 17:44:53,590 - DEBUG - app - Database connection acquired
+2025-12-31 17:44:53,591 - DEBUG - app - Executing query: 
+                SELECT id, title, description, status, user_id, created_at
+                FROM tas...
+2025-12-31 17:44:53,593 - DEBUG - app - Executing query: 
+                SELECT COUNT(*) as count
+                FROM tasks
+                WHERE user_id =...
+2025-12-31 17:44:53,597 - DEBUG - app - Database connection returned to pool
+2025-12-31 17:45:03,576 - DEBUG - app - Database connection acquired
+2025-12-31 17:45:03,577 - DEBUG - app - Executing query: 
+                SELECT id, title, description, status, user_id, created_at
+                FROM tas...
+2025-12-31 17:45:03,580 - DEBUG - app - Executing query: 
+                SELECT COUNT(*) as count
+                FROM tasks
+                WHERE user_id =...
+2025-12-31 17:45:03,585 - DEBUG - app - Database connection returned to pool
+2025-12-31 17:45:11,061 - DEBUG - app - Database connection acquired
+2025-12-31 17:45:11,062 - DEBUG - app - Executing query: 
+                SELECT id, title, description, status, user_id, created_at
+                FROM tas...
+2025-12-31 17:45:11,064 - DEBUG - app - Executing query: 
+                SELECT COUNT(*) as count
+                FROM tasks
+                WHERE user_id =...
+2025-12-31 17:45:11,067 - DEBUG - app - Database connection returned to pool
+2025-12-31 17:45:11,613 - DEBUG - app - Database connection acquired
+2025-12-31 17:45:11,615 - DEBUG - app - Executing query: 
+                SELECT id, title, description, status, user_id, created_at
+                FROM tas...
+2025-12-31 17:45:11,619 - DEBUG - app - Executing query: 
+                SELECT COUNT(*) as count
+                FROM tasks
+                WHERE user_id =...
+2025-12-31 17:45:11,621 - DEBUG - app - Database connection returned to pool
+2025-12-31 17:45:13,575 - DEBUG - app - Database connection acquired
+2025-12-31 17:45:13,576 - DEBUG - app - Executing query: 
+                SELECT id, title, description, status, user_id, created_at
+                FROM tas...
+2025-12-31 17:45:13,578 - DEBUG - app - Executing query: 
+                SELECT COUNT(*) as count
+                FROM tasks
+                WHERE user_id =...
+2025-12-31 17:45:13,580 - DEBUG - app - Database connection returned to pool
+2025-12-31 17:45:14,599 - DEBUG - app - Database connection acquired
+2025-12-31 17:45:14,600 - DEBUG - app - Executing query: 
+                SELECT id, title, description, status, user_id, created_at
+                FROM tas...
+2025-12-31 17:45:14,602 - DEBUG - app - Executing query: 
+                SELECT COUNT(*) as count
+                FROM tasks
+                WHERE user_id =...
+2025-12-31 17:45:14,604 - DEBUG - app - Database connection returned to pool
+2025-12-31 17:45:16,315 - DEBUG - app - Database connection acquired
+2025-12-31 17:45:16,320 - DEBUG - app - Executing query: 
+                SELECT id, title, description, status, user_id, created_at
+                FROM tas...
+2025-12-31 17:45:16,323 - DEBUG - app - Executing query: 
+                SELECT COUNT(*) as count
+                FROM tasks
+                WHERE user_id =...
+2025-12-31 17:45:16,325 - DEBUG - app - Database connection returned to pool
+2025-12-31 17:45:17,568 - DEBUG - app - Database connection acquired
+2025-12-31 17:45:17,569 - DEBUG - app - Executing query: 
+                SELECT id, title, description, status, user_id, created_at
+                FROM tas...
+2025-12-31 17:45:17,571 - DEBUG - app - Executing query: 
+                SELECT COUNT(*) as count
+                FROM tasks
+                WHERE user_id =...
+2025-12-31 17:45:17,573 - DEBUG - app - Database connection returned to pool
+2025-12-31 17:45:18,705 - DEBUG - app - Database connection acquired
+2025-12-31 17:45:18,706 - DEBUG - app - Executing query: 
+            SELECT id, title, description, status, user_id, created_at
+            FROM tasks
+     ...
+2025-12-31 17:45:18,708 - DEBUG - app - Database connection returned to pool
+2025-12-31 17:45:22,085 - DEBUG - app - Database connection acquired
+2025-12-31 17:45:22,086 - DEBUG - app - Executing query: 
+            SELECT id, title, description, status, user_id, created_at
+            FROM tasks
+     ...
+2025-12-31 17:45:22,088 - DEBUG - app - Database connection returned to pool
+2025-12-31 17:45:23,069 - DEBUG - app - Database connection acquired
+2025-12-31 17:45:23,069 - DEBUG - app - Executing query: 
+            SELECT id, title, description, status, user_id, created_at
+            FROM tasks
+     ...
+2025-12-31 17:45:23,072 - DEBUG - app - Database connection returned to pool
+2025-12-31 17:45:23,958 - DEBUG - app - Database connection acquired
+2025-12-31 17:45:23,959 - DEBUG - app - Executing query: 
+            SELECT id, title, description, status, user_id, created_at
+            FROM tasks
+     ...
+2025-12-31 17:45:23,961 - DEBUG - app - Database connection returned to pool
+2025-12-31 17:45:24,207 - DEBUG - app - Database connection acquired
+2025-12-31 17:45:24,209 - DEBUG - app - Executing query: 
+            SELECT id, title, description, status, user_id, created_at
+            FROM tasks
+     ...
+2025-12-31 17:45:24,213 - DEBUG - app - Database connection returned to pool
+2025-12-31 17:45:24,942 - DEBUG - app - Database connection acquired
+2025-12-31 17:45:24,943 - DEBUG - app - Executing query: 
+            SELECT id, title, description, status, user_id, created_at
+            FROM tasks
+     ...
+2025-12-31 17:45:24,946 - DEBUG - app - Database connection returned to pool
+2025-12-31 17:45:28,612 - DEBUG - app - Database connection acquired
+2025-12-31 17:45:28,613 - DEBUG - app - Executing query: 
+                SELECT id, title, description, status, user_id, created_at
+                FROM tas...
+2025-12-31 17:45:28,614 - DEBUG - app - Executing query: 
+                SELECT COUNT(*) as count
+                FROM tasks
+                WHERE user_id =...
+2025-12-31 17:45:28,617 - DEBUG - app - Database connection returned to pool
+2025-12-31 17:45:32,210 - DEBUG - app - Database connection acquired
+2025-12-31 17:45:32,211 - DEBUG - app - Executing query: 
+            SELECT id, title, description, status, user_id, created_at
+            FROM tasks
+     ...
+2025-12-31 17:45:32,214 - DEBUG - app - Database connection returned to pool
+2025-12-31 17:45:36,101 - DEBUG - app - Database connection acquired
+2025-12-31 17:45:36,103 - DEBUG - app - Executing query: 
+            SELECT id, title, description, status, user_id, created_at
+            FROM tasks
+     ...
+2025-12-31 17:45:36,126 - DEBUG - app - Executing query: 
+            UPDATE tasks
+            SET title = %s, description = %s, status = %s
+            WHER...
+2025-12-31 17:45:36,131 - INFO - app - Task updated: 2 by user 4
+2025-12-31 17:45:36,133 - DEBUG - app - Database connection returned to pool
+2025-12-31 17:45:36,710 - DEBUG - app - Database connection acquired
+2025-12-31 17:45:36,711 - DEBUG - app - Executing query: 
+                SELECT id, title, description, status, user_id, created_at
+                FROM tas...
+2025-12-31 17:45:36,713 - DEBUG - app - Executing query: 
+                SELECT COUNT(*) as count
+                FROM tasks
+                WHERE user_id =...
+2025-12-31 17:45:36,715 - DEBUG - app - Database connection returned to pool
+2025-12-31 17:45:40,803 - DEBUG - app - Database connection acquired
+2025-12-31 17:45:40,804 - DEBUG - app - Executing query: 
+            SELECT id, title, description, status, user_id, created_at
+            FROM tasks
+     ...
+2025-12-31 17:45:40,806 - DEBUG - app - Executing query: DELETE FROM tasks WHERE id = %s...
+2025-12-31 17:45:40,808 - INFO - app - Task deleted: 2 by user 4
+2025-12-31 17:45:40,810 - DEBUG - app - Database connection returned to pool
+2025-12-31 17:45:41,054 - DEBUG - app - Database connection acquired
+2025-12-31 17:45:41,055 - DEBUG - app - Executing query: 
+                SELECT id, title, description, status, user_id, created_at
+                FROM tas...
+2025-12-31 17:45:41,057 - DEBUG - app - Executing query: 
+                SELECT COUNT(*) as count
+                FROM tasks
+                WHERE user_id =...
+2025-12-31 17:45:41,059 - DEBUG - app - Database connection returned to pool
+2025-12-31 17:45:46,336 - INFO - app - User logged out: 4
+2025-12-31 17:45:59,351 - DEBUG - app - Database connection acquired
+2025-12-31 17:45:59,352 - DEBUG - app - Executing query: 
+            SELECT id, email, password_hash, name, role, created_at
+            FROM users
+        ...
+2025-12-31 17:45:59,661 - WARNING - app - Failed login attempt for: admin@example.com
+2025-12-31 17:45:59,663 - DEBUG - app - Database connection returned to pool
+2025-12-31 17:46:46,608 - DEBUG - app - Database connection acquired
+2025-12-31 17:46:46,609 - DEBUG - app - Executing query: 
+            SELECT id, email, password_hash, name, role, created_at
+            FROM users
+        ...
+2025-12-31 17:46:46,918 - WARNING - app - Failed login attempt for: admin@example.com
+2025-12-31 17:46:46,920 - DEBUG - app - Database connection returned to pool
+2025-12-31 17:46:47,741 - DEBUG - app - Database connection acquired
+2025-12-31 17:46:47,742 - DEBUG - app - Executing query: 
+            SELECT id, email, password_hash, name, role, created_at
+            FROM users
+        ...
+2025-12-31 17:46:48,052 - WARNING - app - Failed login attempt for: admin@example.com
+2025-12-31 17:46:48,053 - DEBUG - app - Database connection returned to pool
+2025-12-31 17:46:48,578 - DEBUG - app - Database connection acquired
+2025-12-31 17:46:48,578 - DEBUG - app - Executing query: 
+            SELECT id, email, password_hash, name, role, created_at
+            FROM users
+        ...
+2025-12-31 17:46:48,743 - DEBUG - app - Database connection acquired
+2025-12-31 17:46:48,744 - DEBUG - app - Executing query: 
+            SELECT id, email, password_hash, name, role, created_at
+            FROM users
+        ...
+2025-12-31 17:46:48,828 - DEBUG - app - Database connection acquired
+2025-12-31 17:46:48,829 - DEBUG - app - Executing query: 
+            SELECT id, email, password_hash, name, role, created_at
+            FROM users
+        ...
+2025-12-31 17:46:48,913 - DEBUG - app - Database connection acquired
+2025-12-31 17:46:48,917 - DEBUG - app - Executing query: 
+            SELECT id, email, password_hash, name, role, created_at
+            FROM users
+        ...
+2025-12-31 17:46:48,922 - WARNING - app - Failed login attempt for: admin@example.com
+2025-12-31 17:46:48,924 - DEBUG - app - Database connection returned to pool
+2025-12-31 17:46:49,064 - DEBUG - app - Database connection acquired
+2025-12-31 17:46:49,065 - DEBUG - app - Executing query: 
+            SELECT id, email, password_hash, name, role, created_at
+            FROM users
+        ...
+2025-12-31 17:46:49,142 - WARNING - app - Failed login attempt for: admin@example.com
+2025-12-31 17:46:49,169 - DEBUG - app - Database connection returned to pool
+2025-12-31 17:46:49,261 - WARNING - app - Failed login attempt for: admin@example.com
+2025-12-31 17:46:49,263 - DEBUG - app - Database connection returned to pool
+2025-12-31 17:46:49,338 - WARNING - app - Failed login attempt for: admin@example.com
+2025-12-31 17:46:49,340 - DEBUG - app - Database connection returned to pool
+2025-12-31 17:46:49,459 - WARNING - app - Failed login attempt for: admin@example.com
+2025-12-31 17:46:49,461 - DEBUG - app - Database connection returned to pool
+2025-12-31 17:46:55,366 - DEBUG - app - Database connection acquired
+2025-12-31 17:46:55,366 - DEBUG - app - Executing query: 
+            SELECT id, email, password_hash, name, role, created_at
+            FROM users
+        ...
+2025-12-31 17:46:55,661 - DEBUG - app - Database connection acquired
+2025-12-31 17:46:55,662 - DEBUG - app - Executing query: 
+            SELECT id, email, password_hash, name, role, created_at
+            FROM users
+        ...
+2025-12-31 17:46:55,680 - WARNING - app - Failed login attempt for: admin@example.com
+2025-12-31 17:46:55,681 - DEBUG - app - Database connection returned to pool
+2025-12-31 17:46:55,980 - WARNING - app - Failed login attempt for: admin@example.com
+2025-12-31 17:46:55,982 - DEBUG - app - Database connection returned to pool
+2025-12-31 17:47:34,851 - INFO - app - Resource not found: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-12-31 17:47:41,257 - INFO - app - Resource not found: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-12-31 17:47:42,707 - INFO - app - Resource not found: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-12-31 17:47:43,019 - INFO - app - Resource not found: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-12-31 17:47:43,186 - INFO - app - Resource not found: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-12-31 17:47:43,505 - INFO - app - Resource not found: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-12-31 17:47:43,610 - INFO - app - Resource not found: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-12-31 17:47:43,778 - INFO - app - Resource not found: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-12-31 17:47:44,096 - INFO - app - Resource not found: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-12-31 17:49:13,943 - INFO - app - MySQL connection pool created
+2025-12-31 17:49:13,952 - INFO - app - Application started successfully

@@ -3,7 +3,6 @@ Database Connection Extensions
 Handles MySQL and PostgreSQL connections
 """
 
-import mysql.connector
 from mysql.connector import pooling
 from flask import g, current_app
 

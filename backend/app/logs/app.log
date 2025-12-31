@@ -1,0 +1,33 @@
+# This file will be auto-created by the logging system
+# Initial placeholder2025-12-31 11:40:07,872 - INFO - app - MySQL connection pool created
+2025-12-31 11:40:07,881 - INFO - app - Application started successfully
+2025-12-31 11:40:09,047 - INFO - app - MySQL connection pool created
+2025-12-31 11:40:09,063 - INFO - app - Application started successfully
+2025-12-31 11:40:44,745 - INFO - app - Resource not found: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-12-31 11:42:11,859 - ERROR - app - Registration error: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+2025-12-31 11:51:51,472 - DEBUG - app - Database connection acquired
+2025-12-31 11:51:51,473 - DEBUG - app - Executing query: 
+            SELECT id, email, password_hash, name, role, created_at
+            FROM users
+        ...
+2025-12-31 11:51:51,475 - WARNING - app - Login attempt with unknown email: test1@example.com
+2025-12-31 17:11:54,214 - ERROR - app - Failed to create database pool: 2003 (HY000): Can't connect to MySQL server on 'localhost:3306' (10061)
+2025-12-31 17:13:02,556 - INFO - app - MySQL connection pool created
+2025-12-31 17:13:02,565 - INFO - app - Application started successfully
+2025-12-31 17:13:03,541 - INFO - app - MySQL connection pool created
+2025-12-31 17:13:03,550 - INFO - app - Application started successfully
+2025-12-31 17:14:02,720 - DEBUG - app - Database connection acquired
+2025-12-31 17:14:02,720 - DEBUG - app - Executing query: 
+            SELECT id, email, password_hash, name, role, created_at
+            FROM users
+        ...
+2025-12-31 17:14:03,134 - DEBUG - app - Executing query: 
+            INSERT INTO users (email, password_hash, name, role)
+            VALUES (%s, %s, %s, %s...
+2025-12-31 17:14:03,140 - INFO - app - New user registered: test1@example.com (ID: 3)
+2025-12-31 17:14:17,409 - DEBUG - app - Database connection acquired
+2025-12-31 17:14:17,410 - DEBUG - app - Executing query: 
+            SELECT id, email, password_hash, name, role, created_at
+            FROM users
+        ...
+2025-12-31 17:14:17,733 - INFO - app - User logged in: test1@example.com

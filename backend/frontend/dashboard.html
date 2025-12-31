@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="header">
+        <div class="header-content">
+            <h1>Task Management</h1>
+            <div class="user-info">
+                <span id="user-name">Loading...</span>
+                <span id="user-role" class="role-badge">user</span>
+                <button id="logout-btn" class="btn btn-secondary">Logout</button>
+            </div>
+        </div>
+    </header>
+    
+    <main class="main-content">
+        <div class="container">
+            <!-- Message Display -->
+            <div id="message" class="message hidden"></div>
+            
+            <!-- Task Form Section -->
+            <section class="section">
+                <div class="section-header">
+                    <h2 id="form-title">Create New Task</h2>
+                </div>
+                
+                <form id="task-form" class="task-form">
+                    <input type="hidden" id="task-id" value="">
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="task-title">Title</label>
+                            <input 
+                                type="text" 
+                                id="task-title" 
+                                name="title" 
+                                required 
+                                placeholder="Enter task title"
+                                maxlength="200"
+                            >
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="task-status">Status</label>
+                            <select id="task-status" name="status">
+                                <option value="pending">Pending</option>
+                                <option value="in_progress">In Progress</option>
+                                <option value="completed">Completed</option>
+                                <option value="cancelled">Cancelled</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="task-description">Description</label>
+                        <textarea 
+                            id="task-description" 
+                            name="description" 
+                            placeholder="Enter task description"
+                            rows="3"
+                        ></textarea>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary" id="submit-btn">
+                            Create Task
+                        </button>
+                        <button type="button" class="btn btn-secondary hidden" id="cancel-btn">
+                            Cancel
+                        </button>
+                    </div>
+                </form>
+            </section>
+            
+            <!-- Task Filters -->
+            <section class="section">
+                <div class="section-header">
+                    <h2>My Tasks</h2>
+                    <div class="filters">
+                        <select id="filter-status">
+                            <option value="">All Statuses</option>
+                            <option value="pending">Pending</option>
+                            <option value="in_progress">In Progress</option>
+                            <option value="completed">Completed</option>
+                            <option value="cancelled">Cancelled</option>
+                        </select>
+                        
+                        <label id="admin-filter" class="hidden">
+                            <input type="checkbox" id="show-all-tasks">
+                            Show All Users' Tasks
+                        </label>
+                        
+                        <button id="refresh-btn" class="btn btn-secondary">Refresh</button>
+                    </div>
+                </div>
+                
+                <!-- Tasks List -->
+                <div id="tasks-container" class="tasks-container">
+                    <p class="loading">Loading tasks...</p>
+                </div>
+                
+                <!-- Pagination -->
+                <div id="pagination" class="pagination hidden">
+                    <button id="prev-page" class="btn btn-secondary" disabled>Previous</button>
+                    <span id="page-info">Page 1 of 1</span>
+                    <button id="next-page" class="btn btn-secondary" disabled>Next</button>
+                </div>
+            </section>
+            
+            <!-- Admin Section -->
+            <section id="admin-section" class="section hidden">
+                <div class="section-header">
+                    <h2>Admin Panel</h2>
+                </div>
+                
+                <div class="admin-stats">
+                    <div class="stat-card">
+                        <h3>Total Users</h3>
+                        <p id="total-users">0</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Total Tasks</h3>
+                        <p id="total-tasks">0</p>
+                    </div>
+                </div>
+                
+                <div id="users-list" class="users-list">
+                    <!-- Users will be loaded here -->
+                </div>
+            </section>
+        </div>
+    </main>
+    
+    <!-- Delete Confirmation Modal -->
+    <div id="delete-modal" class="modal hidden">
+        <div class="modal-content">
+            <h3>Confirm Delete</h3>
+            <p>Are you sure you want to delete this task?</p>
+            <div class="modal-actions">
+                <button id="confirm-delete" class="btn btn-danger">Delete</button>
+                <button id="cancel-delete" class="btn btn-secondary">Cancel</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
